@@ -1,0 +1,36 @@
+.productsContainer {
+    display: flex;
+}
+
+.productListContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+}
+
+/* .filteContainer{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    width: 100vh;
+} */
+
+.productImage {
+    width: 200px;
+    height: 200px;
+}
+
+.productItem {
+    flex: 0 0 30%;
+}
+
+.link {
+    color: black;
+}
+
+.link:hover {
+
+    color: black;
+}
