@@ -156,6 +156,7 @@ const EditItem = () => {
 
   return (
     <div>
+      <button onClick={() => window.history.back()}>back</button>
       <h1>Edit Item</h1>
       <form onSubmit={submited}>
         <label>Title</label>

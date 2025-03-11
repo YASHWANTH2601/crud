@@ -27,13 +27,16 @@ const ProductItem = () => {
   }, [id, cartList]);
 
   return (
-    <div className="product">
-      <img style={{ width: "200px" }} src={item.image} alt="" />
-      <p>{item.title}</p>
-      <p>Price: {item.price}</p>
-      <p>{item.description}</p>
-      <button onClick={() => navigator(`/edit/${item.id}`)}>edit</button>
-    </div>
+    <>
+      <button onClick={() => window.history.back()}>back</button>
+      <div className="product">
+        <img style={{ width: "200px" }} src={item.image} alt="" />
+        <p>{item.title}</p>
+        <p>Price: {item.price}</p>
+        <p>{item.description}</p>
+        <button onClick={() => navigator(`/edit/${item.id}`)}>edit</button>
+      </div>
+    </>
   );
 };
 
